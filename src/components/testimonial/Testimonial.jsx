@@ -1,64 +1,44 @@
 import React from 'react';
-import './testimonial.css'
-
-const data = [
-    {
-        id: 1,
-        name: "Tom Durden",
-        title: "Senior Developer",
-        img:
-            "https://i.pinimg.com/originals/17/56/8f/17568fcd478e0699067ca7b9a34c702f.png",
-        icon: "assets/twitter.png",
-        desc:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
-    },
-    {
-        id: 2,
-        name: "Alex Kalinski",
-        title: "Co-Founder of DELKA",
-        img:
-            "https://i.pinimg.com/originals/17/56/8f/17568fcd478e0699067ca7b9a34c702f.png",
-        icon: "assets/youtube.png",
-        desc:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
-        featured: true,
-    },
-    {
-        id: 3,
-        name: "Martin Harold",
-        title: "CEO of ALBI",
-        img:
-            "https://i.pinimg.com/originals/17/56/8f/17568fcd478e0699067ca7b9a34c702f.png",
-        icon: "assets/linkedin.png",
-        desc:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
-    },
-];
+import './timeline.css'
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
+import timeLine from '../../timeline'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
 function Testimonial(props) {
+    let workIconStyle = { background: "#06d6a0" }
+    let schoolIconStyle = { background: "#f9c74f" }
+
     return (
-        <div className='testimonial' id='testimonial'>
-            <h1>Testimonials</h1>
-            <div className='container'>
-                {data.map(item => {
-                    return (
-                        <div className={item.featured ? 'card featured' : 'card'}>
-                            <div className='top'>
-                                <img src='https://raw.githubusercontent.com/safak/youtube/react-portfolio/public/assets/right-arrow.png' className="left" alt="" />
-                                <img src={item.img} alt="" className="user" />
-                                <img src={item.icon} alt="" className="right" />
-                            </div>
-                            <div className='center'>
-                                {item.desc}
-                            </div>
-                            <div className='bottom'>
-                                <h3>{item.name}</h3>
-                                <h4>{item.title}</h4>
-                            </div>
-                        </div>
-                    )
-                })}
-            </div>
+        <div className="timeline">
+            <h1 className="title">TIMELINE</h1>
+            <VerticalTimeline>
+                {
+                    timeLine.map(element => {
+                        let isWorkIcon = element.icon === 'Work'
+                        let showButton = element.buttonText !== undefined && element.buttonText !== null && element.buttonText !== ""
+
+                        return (
+                            <VerticalTimelineElement
+                                key={element.id}
+                                date={element.date}
+                                dateClassName="date"
+                                className="vertical-timeline-element--work"
+                                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                                icon={isWorkIcon ? <WorkIcon fontSize="12" /> : <SchoolIcon />}
+                                iconStyle={isWorkIcon ? workIconStyle : schoolIconStyle}
+                            >
+                                <h3 className="vertical-timeline-element-title">{element.title}</h3>
+                                <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>
+                                <p id="description">{element.description}</p>
+                                {showButton && (<a className={`button ${isWorkIcon ? "workButton" : "schoolButton"}`} href="/">{element.buttonText}</a>)}
+
+                            </VerticalTimelineElement>
+                        )
+                    })
+                }
+            </VerticalTimeline>
         </div>
     );
 }

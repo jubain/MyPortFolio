@@ -1,188 +1,130 @@
 export const featuredPortfolio = [
     {
         id: 1,
-        title: "Social Media App",
+        title: "Python",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/768px-Python_logo_01.svg.png",
     },
     {
         id: 2,
-        title: "Rampa UI Design",
+        title: "React JS",
         img:
-            "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+            "https://reactjs.org/logo-og.png",
     },
     {
         id: 3,
-        title: "E-commerce Web Design",
-        img:
-            "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+        title: "CSS",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
     },
     {
         id: 4,
-        title: "Relax Mobile App",
+        title: "Project Management",
         img:
-            "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+            "https://www.techrepublic.com/a/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg",
     },
-    {
-        id: 5,
-        title: "Hero Web Design",
-        img:
-            "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 6,
-        title: "Banking App",
-        img:
-            "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
-    },
+
 ];
 
 export const webPortfolio = [
     {
         id: 1,
-        title: "Web Social Media App",
-        img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+        title: "HTML",
+        img: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
     },
     {
         id: 2,
-        title: "Web Rampa UI Design",
-        img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
+        title: "CSS",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
     },
-    {
-        id: 3,
-        title: "Web E-commerce Design",
-        img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 4,
-        title: "Web Relax App",
-        img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-    },
-    {
-        id: 5,
-        title: "Web Design",
-        img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-    },
-    {
-        id: 6,
-        title: "Web Banking App",
-        img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-    },
+
 ];
 
 export const mobilePortfolio = [
     {
         id: 1,
-        title: "Mobile Social Media App",
+        title: "React JS",
         img:
-            "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+            "https://reactjs.org/logo-og.png",
     },
     {
         id: 2,
-        title: "Mobile Rampa UI Design",
+        title: "Express",
         img:
-            "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
+            "https://initialcommit.com/img/initialcommit/beginners-guide-to-using-express-js-and-node-js-framework.png",
     },
     {
         id: 3,
-        title: "Mobile E-commerce Design",
+        title: "React native",
         img:
-            "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 4,
-        title: "Mobile Relax App",
-        img:
-            "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 5,
-        title: "Mobile Hero Design",
-        img:
-            "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 6,
-        title: "Mobile Banking App",
-        img:
-            "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+            "https://pajaaleksic.com/wp-content/uploads/2019/07/react-native-workshop.jpg",
     },
 ];
 
 export const designPortfolio = [
     {
         id: 1,
-        title: "Design Social Media App",
+        title: "Java",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://codersera.com/blog/wp-content/uploads/2019/06/java_logo_640.jpg",
     },
     {
         id: 2,
-        title: "Design Rampa UI Design",
+        title: "Python",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/768px-Python_logo_01.svg.png",
     },
     {
         id: 3,
-        title: "Design E-commerce Web Design",
+        title: "JavaScript",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png",
     },
     {
         id: 4,
-        title: "Design Relax Mobile App",
+        title: "PHP",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 5,
-        title: "Design Keser Web Design",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 6,
-        title: "Design Banking App",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://laravelnews.imgix.net/images/phplogo.jpg?ixlib=php-3.3.1",
     },
 ];
 
-export const contentPortfolio = [
+export const othersPortfolio = [
     {
         id: 1,
-        title: "Content Social Media App",
+        title: "Project Management",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://www.techrepublic.com/a/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg",
+    },
+    {
+        id: 1,
+        title: "Communication",
+        img:
+            "https://entrepreneurhandbook.co.uk/wp-content/uploads/2020/05/Communication-skills.png.webp",
+    },
+    {
+        id: 1,
+        title: "Team work",
+        img:
+            "https://www.potential.com/wp-content/uploads/2020/11/Image-1.png",
+    },
+    {
+        id: 1,
+        title: "Time management",
+        img:
+            "https://dart.ed.ac.uk/wp-content/uploads/2020/08/Time-Management.png",
+    },
+];
+
+export const databasePortfolio = [
+    {
+        id: 1,
+        title: "MySQL",
+        img:
+            "https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
     },
     {
         id: 2,
-        title: "Content Rampa UI Design",
+        title: "MongoDB",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "https://www.bloorresearch.com/wp-content/uploads/2013/03/MONGO-DB-logo-300x470--x.png",
     },
-    {
-        id: 3,
-        title: "Content E-commerce Web Design",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 4,
-        title: "Content Relax Mobile App",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 5,
-        title: "Content Keser Web Design",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 6,
-        title: "Content Banking App",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-];
+]

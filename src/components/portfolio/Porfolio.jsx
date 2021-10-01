@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
-import { webPortfolio, featuredPortfolio, mobilePortfolio, designPortfolio, contentPortfolio } from '../../data'
+import { webPortfolio, databasePortfolio, featuredPortfolio, mobilePortfolio, designPortfolio, othersPortfolio } from '../../data'
 import './portfolio.css'
 
 function Porfolio(props) {
@@ -12,15 +12,23 @@ function Porfolio(props) {
         },
         {
             id: 'web',
-            title: 'Web Apps'
+            title: 'Web Technologies'
         },
         {
-            id: 'mobile',
-            title: 'Mobile Apps'
+            id: 'frame',
+            title: 'Frameworks'
         },
         {
-            id: 'design',
-            title: 'Designs'
+            id: 'language',
+            title: 'Languages'
+        },
+        {
+            id: 'database',
+            title: 'Database'
+        },
+        {
+            id: 'others',
+            title: 'Others'
         },
 
     ]
@@ -37,11 +45,17 @@ function Porfolio(props) {
             case 'web':
                 setdata(webPortfolio)
                 break;
-            case 'mobile':
+            case 'frame':
                 setdata(mobilePortfolio)
                 break;
-            case 'design':
+            case 'language':
                 setdata(designPortfolio)
+                break;
+            case 'database':
+                setdata(databasePortfolio)
+                break;
+            case 'others':
+                setdata(othersPortfolio)
                 break;
             default:
                 setdata(featuredPortfolio)
@@ -51,7 +65,7 @@ function Porfolio(props) {
 
     return (
         <div className='portfolio' id='portfolio'>
-            <h1>Portfolio</h1>
+            <h1>Skills</h1>
             <ul>
                 {list.map(item => {
                     return (

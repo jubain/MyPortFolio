@@ -26,8 +26,8 @@
 }
 
 .portfolio .container .item {
-  width: 220px;
-  height: 150px;
+  width: 280px;
+  height: 260px;
   border-radius: 20px;
   border: 1px solid lightgray;
   margin: 10px 20px;
@@ -38,6 +38,7 @@
   position: relative;
   transition: all 1 ease;
   cursor: pointer;
+  transition: all 1s ease;
 }
 
 .portfolio .container .item h3 {

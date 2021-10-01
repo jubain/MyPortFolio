@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
 import './works.css'
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 const data = [
     {
         id: "1",
-        icon: "./assets/mobile.png",
-        title: "Web Design",
+        icon: '',
+        title: "Web Development",
         desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            "I developed a website for a construction company",
         img:
-            "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+            "./assets/houseBuilds.png",
+        link: 'www.housebuildsolutions.net'
     },
     {
         id: "2",
         icon: "./assets/globe.png",
-        title: "Mobile Application",
+        title: "Weather App",
         desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "This app lets user see the weather of their location.",
         img:
-            "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+            "./assets/weatherApp.png",
+        link: 'https://jubeen-weather-application.herokuapp.com/'
     },
     {
         id: "3",
         icon: "./assets/writing.png",
-        title: "Branding",
+        title: "Chat App",
         desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Chat room",
         img:
-            "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+            "./assets/chatApp.png",
+        link: 'https://jubeen-chat-app.herokuapp.com/'
     },
 ]
 
@@ -45,6 +45,8 @@ function Works(props) {
 
     return (
         <div id='works' className='works'>
+            <h1>Works</h1>
+
             <div className='slider' style={{ transform: `translateX(-${currentSlider * 100}vw)` }}>
                 {data.map(item => {
                     return (
@@ -53,12 +55,13 @@ function Works(props) {
                                 <div className='left'>
                                     <div className='leftContainer'>
                                         <div className='imgContainer'>
-                                            <img src={item.icon} alt="" />
+                                            {/* <img src={item.icon} alt="" /> */}
+                                            {item.icon}
                                             {/* <PhoneAndroidIcon className='img' /> */}
                                         </div>
                                         <h2>{item.title}</h2>
                                         <p>{item.desc} </p>
-                                        <span>Projects</span>
+                                        <span><a href="">Link</a></span>
                                     </div>
                                 </div>
                                 <div className='right'>

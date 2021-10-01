@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.works h1 {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  color: white;
+}
+
 .works .arrow {
   height: 50px;
   position: absolute;
@@ -98,7 +105,6 @@
 }
 .works .slider .container .item .right img {
   width: 400px;
-  transform: rotate(-10deg);
 }
 
 @media only screen and (max-width: 768px) {

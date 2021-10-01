@@ -12,7 +12,14 @@ function Contact(props) {
     return (
         <div id='contact' className='contact'>
             <div className='left'>
-                <img style={{ width: '100%', height: '60%', marginTop: '70px' }} alt="" src="https://image.freepik.com/free-vector/abstract-minimal-white-background_23-2148887988.jpg" />
+                <img alt="" src="https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762__340.png" />
+                <div className="contacts">
+                    <ul>
+                        <li>https://github.com/jubain</li>
+                        <li>+44 07842583541</li>
+                        <li>jubeennp@gmail.com</li>
+                    </ul>
+                </div>
             </div>
             <div className='right'>
                 <h2>Contact.</h2>
