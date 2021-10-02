@@ -20,7 +20,7 @@ function Intro(props) {
         <div className='intro' id='intro'>
             <div className="left">
                 <div className="imageContainer">
-                    <img src="assets/me.png" />
+                    <img src="assets/jubeen.jpg" />
                 </div>
             </div>
             <div className="right">
