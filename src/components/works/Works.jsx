@@ -3,6 +3,7 @@ import './works.css'
 import HttpIcon from '@mui/icons-material/Http';
 import ChatIcon from '@mui/icons-material/Chat';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import CircleIcon from '@mui/icons-material/Circle';
 
 const data = [
     {
@@ -13,7 +14,7 @@ const data = [
             "I developed a website for a construction company. I used React JS to make this website and used Netlify to host it.",
         img:
             "./assets/houseBuilds.png",
-        link: 'www.housebuildsolutions.net'
+        link: "https://www.housebuildsolutions.net/"
     },
     {
         id: "2",
@@ -63,7 +64,7 @@ function Works(props) {
         <div id='works' className='works'>
             <h1>Works</h1>
 
-            <div className='slider' style={{ transform: `translateX(-${currentSlider * 100}vw)` }}>
+            <div className='slider' style={{ transform: `translateX(-${currentSlider * 100}vw)` }} onTouchMove={() => console.log('moved')}>
                 {data.map(item => {
                     return (
                         <div className='container'>
@@ -77,7 +78,7 @@ function Works(props) {
                                         </div>
                                         <h2>{item.title}</h2>
                                         <p>{item.desc} </p>
-                                        <span><a href="">Link</a></span>
+                                        <span><a href={item.link} target="_blank">Link</a></span>
                                     </div>
                                 </div>
                                 <div className='right'>
@@ -94,6 +95,11 @@ function Works(props) {
             </div>
             <img className='arrow left' onClick={() => handleClick('left')} src="https://raw.githubusercontent.com/safak/youtube/react-portfolio/public/assets/arrow.png" />
             <img className='arrow right' onClick={() => handleClick('right')} src="https://raw.githubusercontent.com/safak/youtube/react-portfolio/public/assets/arrow.png" />
+            <div className="pages">
+                <CircleIcon className='dots' style={currentSlider === 0 ? { color: 'white' } : null} />
+                <CircleIcon className="dots" style={currentSlider === 1 ? { color: 'white' } : null} />
+                <CircleIcon className="dots" style={currentSlider === 2 ? { color: 'white' } : null} />
+            </div>
         </div>
     );
 }

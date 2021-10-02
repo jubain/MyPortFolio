@@ -16,7 +16,7 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   float: right;
 }
 
@@ -85,9 +85,11 @@
     height: 700px;
     border-radius: 50%;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: center;
     float: right;
+  }
+  .intro .left .imageContainer img {
   }
 
   .intro .right .wrapper {
