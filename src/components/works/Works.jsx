@@ -47,6 +47,14 @@ function Works(props) {
             setcurrentSlider(currentSlider < data.length - 1 ? currentSlider + 1 : 0)
     }
 
+    const handleTouch = () => {
+        if (currentSlider > data.length) {
+            setcurrentSlider(0)
+        } else {
+            setcurrentSlider(currentSlider > 0 ? currentSlider - 1 : 2)
+        }
+    }
+
     const checkIcon = (icon) => {
         switch (icon) {
             case 'web':
@@ -64,7 +72,7 @@ function Works(props) {
         <div id='works' className='works'>
             <h1>Works</h1>
 
-            <div className='slider' style={{ transform: `translateX(-${currentSlider * 100}vw)` }} onTouchMove={() => console.log('moved')}>
+            <div className='slider' style={{ transform: `translateX(-${currentSlider * 100}vw)` }} onTouchMove={handleTouch}>
                 {data.map(item => {
                     return (
                         <div className='container'>
