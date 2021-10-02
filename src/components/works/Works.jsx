@@ -48,13 +48,26 @@ function Works(props) {
     }
 
     const handleTouch = () => {
-        if (currentSlider > data.length) {
-            setcurrentSlider(0)
-        } else {
-            if (currentSlider >= 0 && currentSlider < data.length) {
-                setcurrentSlider(currentSlider - 1)
-            }
+        switch (currentSlider) {
+            case currentSlider > data.length:
+                setcurrentSlider(0)
+                break;
+            case (currentSlider < data.length && currentSlider > 0):
+                setcurrentSlider(2)
+                break
+            default:
+                setcurrentSlider(1)
+                break;
         }
+        // if (currentSlider > data.length) {
+        //     setcurrentSlider(0)
+        // } else {
+        //     if (currentSlider >= 0 && currentSlider < data.length) {
+        //         setcurrentSlider(currentSlider + 1)
+        //     } else {
+
+        //     }
+        // }
     }
 
     const checkIcon = (icon) => {
