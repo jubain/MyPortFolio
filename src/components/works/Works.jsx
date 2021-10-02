@@ -51,10 +51,9 @@ function Works(props) {
         if (currentSlider > data.length) {
             setcurrentSlider(0)
         } else {
-            // if(currentSlider>=0){
-            //     currentSlider
-            // }
-            setcurrentSlider(currentSlider > 0 ? currentSlider + 1 : 2)
+            if (currentSlider >= 0 && currentSlider < data.length) {
+                setcurrentSlider(currentSlider + 1)
+            }
         }
     }
 
