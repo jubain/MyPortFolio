@@ -21,12 +21,13 @@ function Testimonial(props) {
 
                         return (
                             <VerticalTimelineElement
+
                                 key={element.id}
                                 date={element.date}
                                 dateClassName="date"
-                                className="vertical-timeline-element--work"
-                                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                                 icon={isWorkIcon ? <WorkIcon fontSize="12" /> : <SchoolIcon />}
+                                contentStyle={{ backgroundColor: '#15023a', color: 'white' }}
+                                contentArrowStyle={{ borderLeft: '7px solid  rgb(33, 150, 243)' }}
                                 iconStyle={isWorkIcon ? workIconStyle : schoolIconStyle}
                             >
                                 <h3 className="vertical-timeline-element-title">{element.title}</h3>

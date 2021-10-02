@@ -27,7 +27,7 @@ function Intro(props) {
                 <div className='wrapper'>
                     <h2>Hi there, I'm</h2>
                     <h1>Jubeen Amatya</h1>
-                    <h3>Tech freak <span ref={textRef}></span></h3>
+                    <h3>I am <span ref={textRef}></span></h3>
                 </div>
                 <a href='#portfolio'>
                     <KeyboardArrowDownIcon className='image' />

@@ -1,7 +1,9 @@
+@import url("../../global.css");
 .timeline {
-  background: #3da3d5;
+  background: rgb(202, 201, 201);
   font-size: 16px;
   color: rgb(53, 53, 53);
+  height: "100%";
 }
 
 .title {
@@ -50,7 +52,7 @@ h3 {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    color: black;
+    color: white;
     margin-top: 1.5em;
   }
 }

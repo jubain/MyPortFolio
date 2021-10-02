@@ -1,33 +1,36 @@
 import React, { useState } from 'react';
 import './works.css'
+import HttpIcon from '@mui/icons-material/Http';
+import ChatIcon from '@mui/icons-material/Chat';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
 const data = [
     {
         id: "1",
-        icon: '',
+        icon: 'web',
         title: "Web Development",
         desc:
-            "I developed a website for a construction company",
+            "I developed a website for a construction company. I used React JS to make this website and used Netlify to host it.",
         img:
             "./assets/houseBuilds.png",
         link: 'www.housebuildsolutions.net'
     },
     {
         id: "2",
-        icon: "./assets/globe.png",
+        icon: "weather",
         title: "Weather App",
         desc:
-            "This app lets user see the weather of their location.",
+            "This app lets user see the weather of their location. I used Node JS(Express JS) to make this app. This app get uses openweather's website's API to get weather data.",
         img:
             "./assets/weatherApp.png",
         link: 'https://jubeen-weather-application.herokuapp.com/'
     },
     {
         id: "3",
-        icon: "./assets/writing.png",
+        icon: "chat",
         title: "Chat App",
         desc:
-            "Chat room",
+            "This app is chat room app. I used Node JS(Express JS) and Socket.io to make this.",
         img:
             "./assets/chatApp.png",
         link: 'https://jubeen-chat-app.herokuapp.com/'
@@ -43,6 +46,19 @@ function Works(props) {
             setcurrentSlider(currentSlider < data.length - 1 ? currentSlider + 1 : 0)
     }
 
+    const checkIcon = (icon) => {
+        switch (icon) {
+            case 'web':
+                return <HttpIcon />
+
+            case 'weather':
+                return <WbSunnyIcon />
+
+            default:
+                return <ChatIcon />
+        }
+    }
+
     return (
         <div id='works' className='works'>
             <h1>Works</h1>
@@ -56,7 +72,7 @@ function Works(props) {
                                     <div className='leftContainer'>
                                         <div className='imgContainer'>
                                             {/* <img src={item.icon} alt="" /> */}
-                                            {item.icon}
+                                            {checkIcon(item.icon)}
                                             {/* <PhoneAndroidIcon className='img' /> */}
                                         </div>
                                         <h2>{item.title}</h2>
