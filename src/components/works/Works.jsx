@@ -52,7 +52,7 @@ function Works(props) {
             setcurrentSlider(0)
         } else {
             if (currentSlider >= 0 && currentSlider < data.length) {
-                setcurrentSlider(currentSlider + 1)
+                setcurrentSlider(currentSlider - 1)
             }
         }
     }
