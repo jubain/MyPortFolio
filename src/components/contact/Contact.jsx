@@ -27,7 +27,7 @@ function Contact(props) {
                     <h2>Contact Me</h2>
                     <form onSubmit={handleSubmit}>
                         <input type="text" placeholder="Email" />
-                        <textarea placeholder="Message"></textarea>
+                        <textarea placeholder="Message" contentEditable={false}></textarea>
                         <button type='submit'>Send</button>
                         {message && <span>Thanks, I'll reply</span>}
                     </form>
