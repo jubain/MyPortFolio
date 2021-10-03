@@ -57,8 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-box-shadow: 0px 0px 15px 3px #000000;
-  box-shadow: 0px 0px 15px 3px #000000;
+  -webkit-box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.4);
 }
 
 .works .slider .container .item .left {
@@ -146,16 +146,20 @@
   .works .pages {
     opacity: 1;
     position: absolute;
-    bottom: 250px;
+    bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .works .pages .dots {
-    color: pink;
+    color: white;
     padding: 0 5px 0 5px;
+    cursor: pointer;
   }
 
   .works .pages .dots .active {
-    color: grey;
+    color: var(--mainColor);
   }
 
   .works .slider {

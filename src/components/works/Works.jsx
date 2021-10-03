@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './works.css'
 import HttpIcon from '@mui/icons-material/Http';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -52,8 +52,8 @@ function Works(props) {
             case currentSlider > data.length:
                 setcurrentSlider(0)
                 break;
-            case (currentSlider < data.length && currentSlider > 0):
-                setcurrentSlider(2)
+            case (currentSlider === 1):
+                setcurrentSlider(currentSlider + 1)
                 break
             default:
                 setcurrentSlider(1)
@@ -119,9 +119,17 @@ function Works(props) {
             <img className='arrow left' onClick={() => handleClick('left')} src="https://raw.githubusercontent.com/safak/youtube/react-portfolio/public/assets/arrow.png" />
             <img className='arrow right' onClick={() => handleClick('right')} src="https://raw.githubusercontent.com/safak/youtube/react-portfolio/public/assets/arrow.png" />
             <div className="pages">
-                <CircleIcon className='dots' style={currentSlider === 0 ? { color: 'white' } : null} />
-                <CircleIcon className="dots" style={currentSlider === 1 ? { color: 'white' } : null} />
-                <CircleIcon className="dots" style={currentSlider === 2 ? { color: 'white' } : null} />
+                <div className='dots' onClick={() => setcurrentSlider(0)}>
+                    <CircleIcon style={currentSlider === 0 ? { color: 'black' } : null} />
+                </div>
+                <div className='dots' onClick={() => setcurrentSlider(1)} >
+                    <CircleIcon className="dots" style={currentSlider === 1 ? { color: 'black' } : null} />
+                </div>
+
+                <div className='dots' onClick={() => setcurrentSlider(2)} >
+                    <CircleIcon className="dots" style={currentSlider === 2 ? { color: 'black' } : null} />
+                </div>
+
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ function Testimonial(props) {
 
     return (
         <div className="timeline">
-            <h1 className="title">TIMELINE</h1>
+            <h1 className="title">Timeline</h1>
             <VerticalTimeline>
                 {
                     timeLine.map(element => {
