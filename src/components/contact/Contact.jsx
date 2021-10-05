@@ -33,24 +33,30 @@ function Contact(props) {
                     </form>
                 </div>
             </div>
-            <h2 style={{ alignSelf: 'center' }}>Stay Connected</h2>
+
             <div className="contacts">
-                <div className='contactBox' onClick={() => { window.open("https://github.com/jubain", "_blank") }}>
-                    <GitHubIcon className="icon" />
-                    <h4>https://github.com/jubain</h4>
+                <div className="h2">
+                    <h2>Get in touch with me.</h2>
                 </div>
-                <div className='contactBox'>
-                    <PhoneIcon className="icon" />
-                    <h4>+44 07842583541</h4>
+                <div className="icons">
+                    <div className='contactBox' onClick={() => { window.open("https://github.com/jubain", "_blank") }}>
+                        <GitHubIcon className="icon" />
+                        <h4>https://github.com/jubain</h4>
+                    </div>
+                    <div className='contactBox'>
+                        <PhoneIcon className="icon" />
+                        <h4>+44 07842583541</h4>
+                    </div>
+                    <div className='contactBox'>
+                        <EmailIcon className="icon" />
+                        <h4>jubeennp@gmail.com</h4>
+                    </div>
+                    <div className='contactBox'>
+                        <InstagramIcon className="icon" />
+                        <h4>jubeen_amatya</h4>
+                    </div>
                 </div>
-                <div className='contactBox'>
-                    <EmailIcon className="icon" />
-                    <h4>jubeennp@gmail.com</h4>
-                </div>
-                <div className='contactBox'>
-                    <InstagramIcon className="icon" />
-                    <h4>jubeen_amatya</h4>
-                </div>
+
             </div>
         </div>
     );
